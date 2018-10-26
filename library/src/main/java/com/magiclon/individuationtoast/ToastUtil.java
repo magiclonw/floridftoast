@@ -384,4 +384,40 @@ public class ToastUtil {
         }
         return true;
     }
+    
+    public static boolean doubleClickExitInfo(Context context) {
+        if ((System.currentTimeMillis() - mExitTime) > 2000) {
+            ToastUtil.showinfo(context,"再按一次退出");
+            mExitTime = System.currentTimeMillis();
+            return false;
+        }
+        return true;
+    }
+
+    public static boolean doubleClickExitWron(Context context) {
+        if ((System.currentTimeMillis() - mExitTime) > 2000) {
+            ToastUtil.showwarning(context,"再按一次退出");
+            mExitTime = System.currentTimeMillis();
+            return false;
+        }
+        return true;
+    }
+
+    public static boolean doubleClickExitError(Context context) {
+        if ((System.currentTimeMillis() - mExitTime) > 2000) {
+            ToastUtil.showerror(context,"再按一次退出");
+            mExitTime = System.currentTimeMillis();
+            return false;
+        }
+        return true;
+    }
+    
+    public static boolean doubleClickExitSuccess(Context context) {
+        if ((System.currentTimeMillis() - mExitTime) > 2000) {
+            ToastUtil.showsuccess(context,"再按一次退出");
+            mExitTime = System.currentTimeMillis();
+            return false;
+        }
+        return true;
+    }
 }
