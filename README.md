@@ -15,7 +15,7 @@ allprojects {
 - Add the dependency:
 ```
 dependencies {
-	compile 'com.github.MagicLonW:floridftoast:1.0.0'
+	compile 'com.github.magiclonw:floridftoast:1.0.0'
 }
 ```
 
