@@ -2,9 +2,10 @@ package com.magiclon.floridtoast;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.magiclon.individuationtoast.ToastUtil;
 
@@ -12,7 +13,7 @@ import com.magiclon.individuationtoast.ToastUtil;
  * Created by Admin on 2017/9/15 015.
  */
 
-public abstract class BaseActivity extends AppCompatActivity{
+public abstract class BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
